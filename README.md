@@ -66,6 +66,11 @@ myQuery.setFilter(
 // Now that we have specified the query, the aggregation, the parameters and the filter, we can output the ODATA URL (useful for testing)
 console.log(myQuery.makeURL());
 
+// Now finally run the query
+myQuery.runQuery(function(thisQuery){
+	// Do something with the returned data
+});
+
 ```
 
 This library provides a series of functions for converting the data into something we can quickly use in ChartJS
