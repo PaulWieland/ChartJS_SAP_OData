@@ -74,13 +74,13 @@ __getSeriesValues__ returns an array of unique values for the specified field
 `thisQuery.getSeriesValues("A0COMP_CODE");` Will return a unique array of company codes, which could be used for building up the chart series, say one line for each company
 	
 __extractData__ returns a data array in a format that ChartJS understands
-* _ _field_ _ - the name of the field who's value will be charted - this is usually a key figure
-* _ _filter_ _ - Which records to restrict to. [{field:"A0COMP_CODE", value:"XYZ1"}] will return only the records where company code is equal to XYZ1
-* _ _key_field_ _ - optional - a field to key the `field` by - used to line up X & Y 
-* _ _format_ _ - the format the data is returned in.
-** _ _array_ _ gives a standard unindexed array of values
-** _ _object_ _ returns an object where the properties are the key_field and the value is the field
-** _ _point_ _ returns an array of x,y point objects where x is the key_field and y is the field
+* _field_ - the name of the field who's value will be charted - this is usually a key figure
+* _filter_ - Which records to restrict to. [{field:"A0COMP_CODE", value:"XYZ1"}] will return only the records where company code is equal to XYZ1
+* _key_field_ - optional - a field to key the `field` by - used to line up X & Y 
+* _format_ - the format the data is returned in.
+* * _array_ gives a standard unindexed array of values
+* * _object_ returns an object where the properties are the key_field and the value is the field
+* * _point_ returns an array of x,y point objects where x is the key_field and y is the field
 
 `thisQuery.extractData({field:"F30MFF3ZH9WKHI9N417BMQYR0", filter: [{field:"A0COMP_CODE", value:"XYZ1"}], format:"array"});`
 	
