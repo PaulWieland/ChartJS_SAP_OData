@@ -3,7 +3,7 @@ This is a small library I created for working with SAP OData sources (Such as BE
 
 I have a number of SAP BEx Queries which I wanted to bring together into a modern responsive dashboard using (Chart.js)[https://www.chartjs.org].
 
-It is possible to publish SAP BEx Queries as OData sources which are accessible through the SAP Netweaver Gateway. I wrote this library to define the OData source and then interact with the query.
+It is possible to publish SAP BEx Queries as OData sources which are accessible via HTTP through the SAP Netweaver Gateway. I wrote this library to define the OData source and then interact with the query.
 
 # Example Architecture
 Modern Web Browser <-> HTTP Server <-> SAP BW Server
